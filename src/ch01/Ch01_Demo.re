@@ -1,6 +1,6 @@
 type person = {
   id: int,
-  name: string,
-  nic: string
+  name: string
 };
-let makePerson(id, name, nic) = {id, name, nic};
+let makePerson(id, name) = {id, name};
+let bob = makePerson(42, "Bobish");

@@ -2,13 +2,18 @@
 'use strict';
 
 
-function makePerson(id, name, nic) {
+function makePerson(id, name) {
   return /* record */[
           /* id */id,
-          /* name */name,
-          /* nic */nic
+          /* name */name
         ];
 }
 
+var bob = /* record */[
+  /* id */42,
+  /* name */"Bobish"
+];
+
 exports.makePerson = makePerson;
+exports.bob = bob;
 /* No side effect */
