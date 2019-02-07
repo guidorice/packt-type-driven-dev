@@ -2,6 +2,8 @@
 'use strict';
 
 
+console.log(1, 2);
+
 var bob = /* tuple */[
   1,
   "Bob"
@@ -20,10 +22,17 @@ var bobId = 1;
 
 var jimId = 2;
 
+var tom = /* tuple */[
+  3,
+  "tom",
+  45
+];
+
 exports.bob = bob;
 exports.jim = jim;
 exports.bobName = bobName;
 exports.jimName = jimName;
 exports.bobId = bobId;
 exports.jimId = jimId;
-/* No side effect */
+exports.tom = tom;
+/*  Not a pure module */
