@@ -3,6 +3,19 @@
 
 var $$String = require("bs-platform/lib/js/string.js");
 
+function make(string) {
+  return $$String.capitalize($$String.trim(string));
+}
+
+function toString(t) {
+  return t;
+}
+
+var Name = /* module */[
+  /* make */make,
+  /* toString */toString
+];
+
 function id(t) {
   return t[/* id */0];
 }
@@ -11,14 +24,15 @@ function name(t) {
   return t[/* name */1];
 }
 
-function make(id, name) {
+function make$1(id, name) {
   return /* record */[
           /* id */id,
-          /* name */$$String.trim($$String.capitalize(name))
+          /* name */name
         ];
 }
 
+exports.Name = Name;
+exports.make = make$1;
 exports.id = id;
-exports.make = make;
 exports.name = name;
 /* No side effect */
