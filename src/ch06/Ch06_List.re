@@ -4,6 +4,7 @@ type list('a) =
 
 let people = Ch04_RecordLiterals.(Cons(bob, Cons(jim, Cons(tom, Empty))));
 
+/** greetOne person! */
 let greetOne = ({Ch04_RecordLiterals.id, name}) =>
   print_endline({j|Hello, $name with id $id|j});
 

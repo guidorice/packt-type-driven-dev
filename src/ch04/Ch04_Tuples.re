@@ -5,6 +5,7 @@ let jim = ("Jim", 2);
 /* let bobEqualsJim = bob == jim; */
 
 let (bobId, bobName) = bob;
+Js.log(bobId);
 let (jimName, _) = jim;
 
 let bobId = fst(bob);
